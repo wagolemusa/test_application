@@ -22,6 +22,14 @@ $navbar-default-bg: #3F729B;
 	text-align: center;
 }
 
+.article-actions{
+	border-top: 1px solid #eaeaea;
+	padding-top: 5px;
+}
+
+.description{
+	margin-top: 0;
+}
 
 .jumbotron{
 	background: url(../assets/ref.JPG);
@@ -37,8 +45,12 @@ $navbar-default-bg: #3F729B;
 	font-weight: blod;
 }
 
+
+
+
+
 footer {
-	maring-top: 45px;
+	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
 	color: #777;
