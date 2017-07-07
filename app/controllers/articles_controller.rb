@@ -37,10 +37,11 @@ def update
 end
 
 def create
-	debugger
+	#debugger
 	
 	@article = Article.new(article_params)
-	@article.user = User.first
+	#@article.user = User.first
+	@article.user = current_user # it saves the name of user or id from db who create the article
 	if @article.save
 		#flash[:notice] = "Article was successfully created"
 		flash[:success] = "Article was successfully created"
