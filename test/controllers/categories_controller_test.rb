@@ -5,6 +5,7 @@ class CategoriesControllerTest < ActionController::TestCase
 
 def setup
 	@category = Category.create(name: "sports") # this is a vailable for test
+		#definding admin login user
 	@user = User.create(username: "wagole", email: "homiemusa@gmail.com", password: "password", admin: true)
 end
 
@@ -15,7 +16,7 @@ end
 	end
 
 	test "should get new" do 
-		session[:user_id] = @user.id
+		session[:user_id] = @user.id #definding admin login user
 		get :new
 		assert_response :success
 
