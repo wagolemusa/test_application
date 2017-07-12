@@ -13,6 +13,11 @@ $navbar-default-bg: #3F729B;
 	font-weight: bold;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #feecec;
+    font-size: 16px;
+}
+
 #logo:hover {
 	color: #fff;
 	text-decoration: none;
@@ -63,6 +68,17 @@ $navbar-default-bg: #3F729B;
 .listing{
 	list-style: none;
 	padding-left: 0;
+}
+
+.badge{
+	background-color: #CEF6F5;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.input_checkbox input{
+	with: auto !important;
 }
 
 

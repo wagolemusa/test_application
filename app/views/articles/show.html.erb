@@ -26,6 +26,12 @@
 	<hr>
  <%= simple_format(@article.description) %>
 
+ <! this it displays the categories !>
+
+ <% if @article.categories.any? %>
+<p>Categories: <%= render @article.categories %></p>
+ <% end %>
+
 <div class="article-actions">
 
 	<% if logged_in? && (current_user == @article.user || current_user.admin?) %> <! this removes only edit & delete method from show page !>
